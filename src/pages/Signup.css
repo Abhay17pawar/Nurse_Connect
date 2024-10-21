@@ -1,0 +1,57 @@
+/* Signup.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body and html cover full height */
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+.img {
+    flex: 1; /* Take up equal space */
+    height: 100%; /* Full height */
+    width: 800px;
+}
+.nurseConnect-heading {
+    display: inline-flex; /* Ensures text and icon are aligned */
+    align-items: center;  /* Vertically aligns the icon with the text */
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+.toLogin{
+    margin-left: 130px;
+    margin-bottom: 20px;
+}
+.toSignup{
+    margin-left: 115px;
+}
+  .icon {
+    margin-left: 10px; /* Adds some space between the text and the icon */
+    font-size: 2.5rem; /* Adjust size to match the heading */
+  }
+  
+.form {
+    flex: 1; /* Take up equal space */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    padding: 40px; /* Add padding around the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+
+h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Add space below the title */
+}
+
+.button {
+    width: 100%; /* Full width button */
+}
