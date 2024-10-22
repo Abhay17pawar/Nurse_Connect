@@ -1,5 +1,6 @@
 import * as React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom"
 import { Bell, Calendar, Home, Settings, User, AlertTriangle, Activity, Heart, Weight, Ruler } from "lucide-react";
 
 const HealthStatCard = ({ icon: Icon, title, value, unit, trend }) => (
@@ -47,8 +48,10 @@ const AppointmentCard = ({ date, time, doctor, department }) => (
   </motion.div>
 );
 
+
 export default function HomePage() {
   const [isEmergency, setIsEmergency] = React.useState(false);
+  const navigate = useNavigate();
   const patientName = "John Doe";
   const appointments = [
     { id: 1, date: "Oct 25", time: "09:00 AM", doctor: "Dr. Smith", department: "Cardiology" },
@@ -57,6 +60,7 @@ export default function HomePage() {
   ];
 
   const handleEmergency = () => {
+    navigate('/map')
     setIsEmergency(true);
     setTimeout(() => setIsEmergency(false), 3000);
   };
