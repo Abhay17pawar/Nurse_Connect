@@ -1,0 +1,158 @@
+/* Main Layout */
+.dashboard {
+    @apply flex min-h-screen bg-gray-100;
+  }
+  
+  .sidebar {
+    @apply w-64 bg-white shadow-lg p-6 flex flex-col gap-8;
+  }
+  
+  .main-content {
+    @apply flex-1 p-8;
+  }
+  
+  /* User Info Section */
+  .user-info {
+    @apply mb-8;
+  }
+  
+  .user-info h2 {
+    @apply text-xl font-bold text-gray-800;
+  }
+  
+  .user-info p {
+    @apply text-sm text-gray-600;
+  }
+  
+  /* Navigation */
+  .nav {
+    @apply flex flex-col gap-2;
+  }
+  
+  .nav-button {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors;
+  }
+  
+  .nav-icon {
+    @apply w-5 h-5;
+  }
+  
+  /* Header Section */
+  .header {
+    @apply flex justify-between items-center mb-8;
+  }
+  
+  .header h1 {
+    @apply text-2xl font-bold text-gray-800;
+  }
+  
+  /* Emergency Button */
+  .emergency-button {
+    @apply flex items-center gap-2 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors;
+  }
+  
+  .emergency-notification {
+    @apply px-4 py-2 bg-green-500 text-white rounded-lg animate-pulse;
+  }
+  
+  /* Health Stats Grid */
+  .grid {
+    @apply grid gap-8;
+  }
+  
+  .health-stats {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6;
+  }
+  
+  /* Health Stat Cards */
+  .card {
+    @apply bg-white p-6 rounded-xl shadow-md;
+  }
+  
+  .card-content {
+    @apply space-y-2;
+  }
+  
+  .icon-container {
+    @apply p-2 rounded-full bg-blue-50;
+  }
+  
+  .icon {
+    @apply w-6 h-6 text-blue-600;
+  }
+  
+  .trend {
+    @apply text-sm font-medium;
+  }
+  
+  .trend.up {
+    @apply text-green-500;
+  }
+  
+  .trend.down {
+    @apply text-red-500;
+  }
+  
+  .title {
+    @apply text-gray-600 text-sm;
+  }
+  
+  .value {
+    @apply text-2xl font-bold text-gray-800;
+  }
+  
+  .unit {
+    @apply text-sm text-gray-500;
+  }
+  
+  /* Appointments Section */
+  .appointments {
+    @apply mt-8;
+  }
+  
+  .appointments h2 {
+    @apply text-xl font-bold text-gray-800 mb-4;
+  }
+  
+  .appointment-card {
+    @apply bg-white p-4 rounded-lg shadow-sm mb-4 hover:shadow-md transition-shadow;
+  }
+  
+  .appointment-content {
+    @apply flex justify-between items-center;
+  }
+  
+  .doctor-name {
+    @apply font-medium text-gray-800;
+  }
+  
+  .department {
+    @apply text-sm text-gray-500;
+  }
+  
+  .appointment-details {
+    @apply text-right;
+  }
+  
+  .appointment-date {
+    @apply text-sm font-medium text-gray-600;
+  }
+  
+  .appointment-time {
+    @apply text-sm text-gray-500;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard {
+      @apply flex-col;
+    }
+    
+    .sidebar {
+      @apply w-full;
+    }
+    
+    .health-stats {
+      @apply grid-cols-1;
+    }
+  }
